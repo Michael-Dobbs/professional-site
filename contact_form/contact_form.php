@@ -1,7 +1,7 @@
 <?php
 
 // configure
-$from = 'info@yourdomain.com'; // Replace it with Your Hosting Admin email. REQUIRED!
+$from = 'email-smtp.us-east-1.amazonaws.com'; // Replace it with Your Hosting Admin email. REQUIRED!
 $sendTo = 'mikedobbs1997@gmail.com'; // Replace it with Your email. REQUIRED!
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'email' => 'Email', 'subject' => 'Subject', 'message' => 'Message'); // array variable name => Text to appear in the email. If you added or deleted a field in the contact form, edit this array.
@@ -47,3 +47,4 @@ else {
     echo $responseArray['message'];
 }
 endif;
+?>
