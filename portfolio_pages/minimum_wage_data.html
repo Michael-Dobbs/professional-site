@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Meet Michael Dobbs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Michael Dobbs - Professional Landing" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="icon.jpeg">
+    <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+
+  <body class="page">
+
+    <div class="lm-animated-bg"></div>
+    
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
+        </div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <!-- Scroll To Top Button -->
+    <div class="lmpixels-scroll-to-top"><i class="lnr lnr-chevron-up"></i></div>
+    <!-- /Scroll To Top Button -->
+
+    <div class="page-scroll">
+      <div id="page_container" class="page-container bg-move-effect" data-animation="transition-flip-in-right">
+
+        <!-- Header -->
+        <header id="site_header" class="header">
+          <div class="header-content clearfix">
+                
+            <!-- Text Logo -->
+            <div class="text-logo">
+              <a href="../index.html">
+                <div class="logo-symbol">M</div>
+                <div class="logo-text">Michael <span>Dobbs</span></div>
+              </a>
+            </div>
+            <!-- /Text Logo -->
+
+            <!-- Navigation -->
+            <div class="site-nav mobile-menu-hide">
+              <ul class="leven-classic-menu site-main-menu">
+
+                <li class="menu-item">
+                  <a href="../index.html">About Me</a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="../resume.html">Resume</a>
+                </li>
+
+                <li class="menu-item menu-item-has-children">
+                  <a href="../portfolio-landing.html">Portfolio</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href="../tableau_portfolio.html">Data Analysis & Visualization</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="../database_portfolio.html">Database Administration</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-item">
+                  <a href="../contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+
+            <a class="menu-toggle mobile-visible">
+                <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </header>
+        <!-- /Header -->
+
+        <div id="main" class="site-main">
+          <div id="main-content" class="single-page-content">
+            <div id="primary" class="content-area">
+
+              <div class="page-title">
+                <h1>Minimum Wage Data Project</h1>
+                <div class="home-buttons">
+                  <a href="../tableau_portfolio.html" class="btn btn-primary">Return To Portfolio</a>
+                </div>
+              </div>
+
+
+              <!--Start of Page Content-->
+              <div id="content" class="page-content site-content single-post" role="main">
+                
+                
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>A Tableau Exercise In Creating Map/Geospatial Visualization For Analysis</h4>
+                    <p>For this project I found a free dataset of 
+                      <a href="https://www.kaggle.com/datasets/lislejoem/us-minimum-wage-by-state-from-1968-to-2017">
+                      minimum wages</a> from all 50 states from the years 1968-2020. 
+                      With this impressive dataset I wanted to create some interesting visualiztions 
+                      that could help me better analyze how the U.S. federal and state minimum wages 
+                      were changing over time and what impacts that could have on the U.S economy and 
+                      its citizens.</p><br>
+                      
+                      <p>Here are some of the key questions that I wanted to answer with my analysis.</p>
+                      <ul>
+                        <li>Are certain areas of the U.S. more likely to have higher minimum wages?</li>
+                        <li>What states have the highest minimum wages today?</li>
+                        <li>What are some trends in individual states wages over time?</li>
+                        <li>What trends does the federal minimum wage show over time? </li>
+                      </ul><br>
+
+                      <p>It is also worth noting that this analysis has data only demonstrating wages
+                        and their 
+                      </p>
+                  </div>
+                </div>
+                <br>
+                
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>The Inital Pre-Cleaned Dataset In Excel.</h4>
+                    <p>The data came pre-cleaned and ready to use in a cvv file that I easily loaded into my 
+                      Tableau workspace. The most notable columns (A-F) included in my analysis were the year, state,
+                      the state minimum wage for that year, the state minimum wage's modern value (2020), the 
+                      federal minimum wage for that year, and the federal minimum wage's modern value (2020). 
+                      </p>
+                    <img src="../img/daprojects/wage_data/wd_cvv.png" alt="Minimum Wage Data" title="" />
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>Interactable Map of State Minimum Wages Over Time.</h4>
+                    <p>Since I had some Geospatial data from the state column, I thought that one of the most 
+                      useful visualiztions I could make would be a map of the states filtered by
+                      any single year someone wanted to analyze wages for. Hovering over a state
+                      allows someone to view all its minimum wage data for that year with the federal data
+                      listed as well. This visualization is particularly useful if we want to do comparisons
+                      between states and/or federal minimum wages within seconds. </p><br>
+                      
+                      <p> The map displays
+                      and color codes each states' minimum wage for that year (a wage of 0 means they used the 
+                      federal minimum wage as their state minimum wage). That allowed me to instantly compare 
+                      wages with all of the states. From there I could just hover over any state to view the 
+                      federal wage to compare it as well. The modern 2020 value also gives us context as to the
+                      value of what the wages had during the listed year.</p>
+                      
+                    <img src="../img/daprojects/wage_data/wage_data_map.png" alt="Minimum Wage Data" title="" />
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>Chart Comparing Different State Wages in a specific year (i.e., 2020).</h4>
+                    <p>I made this chart because I believed it would be easier to do multiple/many state comparisons 
+                      for any year that needed to be analyzed. While the map is impressive and good for overview and 
+                      individual state comparisons, this chart allows us to quickly view and compare large blocks of 
+                      states’ wages (like the top and bottom ten).</p><br>
+                      <p>Here I was also able to answer one of my key questions as well, being which states have 
+                      the highest minimum wages as of when this analysis was conducted. The top five states were 
+                      <font color="blue">District of Columbia ($14.00/hr), Washington ($13.50/hr), California ($13.00/hr), 
+                        Massachusetts ($12.75/hr), and tied at fifth place were Arizona, Colorado, and Maine ($12.00/hr).</font></p>
+                    <img src="../img/daprojects/wage_data/State_wage_comparison.PNG" alt="Minimum Wage Data" title="" />
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>Displaying Data For Each Individual States' Wages Over Time</h4>
+                    <img src="../img/daprojects/wage_data/State_wage_changes.png" alt="Minimum Wage Data" title="" />
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>Investigating Federal Minimum Wages Change in Value Over Time.</h4>
+                    <img src="../img/daprojects/wage_data/Federal Minimum Wage Value.PNG" alt="Minimum Wage Data" title="" />
+                  </div>
+                </div>
+               
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <footer class="site-footer clearfix">
+          <div class="footer-social">
+            <ul class="footer-social-links">
+              <li>
+                <a href="https://www.linkedin.com/in/michael-dobbs-086bb71b0/">LinkedIn</a>
+              </li>
+
+              <li>
+                <a href="https://github.com/Michael-Dobbs">Github</a>
+              </li>
+            </ul>
+          </div>
+              
+          <div class="footer-copyrights">
+            <p></p>
+          </div>
+        </footer>
+        
+      </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+    <script src="js/jquery.googlemap.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

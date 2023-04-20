@@ -95,8 +95,13 @@
             <div id="primary" class="content-area">
 
               <div class="page-title">
-                <h1><font color="blue">Portfolio Topics</font></h1>
-                <p><b>Select a field of work to view some projects that I have done relating to it.</b></p>
+                <h1><font color=blue>Cloud Computing Portfolio</font></h1>
+                <p>Here are some of the projects that I did involving deploying cloud architecture solutions
+                  to meet technical requirements for various business applications.
+                </p>
+                <div class="home-buttons">
+                  <a href="portfolio-landing.html" class="btn btn-primary">View Other Portfolios</a>
+                </div>
               </div>
 
               <div id="content" class="page-content site-content single-post" role="main">
@@ -105,6 +110,33 @@
                   <div class=" col-xs-12 col-sm-12 ">
                     <!-- Portfolio Content -->
                     <div id="portfolio_content_q" class="portfolio-content">
+
+                      <ul class="portfolio-filters">
+                        <li class="active">
+                          <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                        </li>
+                        
+                        <li>
+                          <a class="filter btn btn-sm btn-link" data-group="category_detailed">Detailed</a>
+                        </li>
+                        
+                        <li>
+                          <a class="filter btn btn-sm btn-link" data-group="category_image">Images</a>
+                        </li>
+                        
+                        <!--
+                        <li>
+                          <a class="filter btn btn-sm btn-link" data-group="category_youtube-video">YouTube Videos</a>
+                        </li>
+                        -->
+
+                        <!-- URL's
+                        <li>
+                          <a class="filter btn btn-sm btn-link" data-group="category_direct-url">Direct URL</a>
+                        </li>
+                        -->
+                      </ul>
+      
       
                       <!-- Portfolio Grid -->
                       <div class="portfolio-grid two-columns shuffle">
@@ -112,41 +144,62 @@
                         <!-- Portfolio Item Detailed Page-->
                         <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
                           <div class="portfolio-item-img">
-                            <img src="./img/data-analysis.jpg" alt="data-analysis-and-visualization" title="data-analysis-and-visualization" />
-                            <a href="tableau_portfolio.html"></a>
+                            <img src="./img/cloudprojects/RDS.png" alt="Cloud Database Creation" title="Cloud Database Creation" />
+                            <a href="portfolio_pages/RDS-cloud.html"></a>
                           </div>
 
                           <i class="far fa-file-alt"></i>
-                          <h4 class="name">Data Analysis & Visualization</h4>
-                          <span class="category">Data Analysis & Visualization</span>
+                          <h4 class="name">Cloud Database Creation/Deployment - AWS RDS</h4>
+                          <span class="category">Database Creation And Security</span>
                         </figure>
                         <!-- /Portfolio Item Detailed Page-->
 
                         <!-- Portfolio Item Detailed Page-->
                         <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
                           <div class="portfolio-item-img">
-                            <img src="./img/database-administrator.jpg" alt="Database Administration" title="Database Administration" />
-                            <a href="database_portfolio.html"></a>
+                            <img src="./img/cloudprojects/AWS-Amplify.jpg" alt="Web Application Deployment - AWS Amplify" title="Web Application Deployment - AWS Amplify" />
+                            <a href="portfolio_pages/RDS.html"></a>
                           </div>
 
                           <i class="far fa-file-alt"></i>
-                          <h4 class="name">Database Administration</h4>
-                          <span class="category">Database Administration</span>
+                          <h4 class="name">Web Application Deployment - AWS Amplify (This Website!)</h4>
+                          <span class="category">Web Application Deployment - AWS Amplify</span>
                         </figure>
                         <!-- /Portfolio Item Detailed Page-->
 
-                        <!-- Portfolio Item Detailed Page-->
-                        <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+
+                        <!-- Portfolio Item Youtube Video-->
+                        <!--
+                        <figure class="item lbvideo" data-groups='["category_all", "category_video", "category_youtube-video"]'>
+                            <div class="portfolio-item-img">
+                              <img src="./img/portfolio/2.jpg" alt="YouTube Video 2" title="" />
+                              <a href="https://www.youtube.com/embed/F-1weFCiYBA" class="lightbox mfp-iframe" title="YouTube Video 2"></a>
+                            </div>
+
+                            <i class="fab fa-youtube"></i>
+                            <h4 class="name">YouTube Video</h4>
+                            <span class="category">Video, YouTube Video</span>
+                        </figure>
+                        -->
+                        <!-- /Portfolio Item Youtube Video-->
+
+            
+                        <!-- Portfolio Item URL-->
+                        <!--
+                        <figure class="item direct" data-groups='["category_all", "category_direct-url"]'>
                           <div class="portfolio-item-img">
-                            <img src="./img/cloud-computing.PNG" alt="Cloud Computing" title="Cloud Computing" />
-                            <a href="cloud_portfolio.html"></a>
+                            <img src="./img/portfolio/8.jpg" alt="Direct URL" title="" />
+                            <a target="_blank" href="https://themeforest.net/user/lmpixels/portfolio"></a>
                           </div>
 
-                          <i class="far fa-file-alt"></i>
-                          <h4 class="name">Cloud Computing</h4>
-                          <span class="category">Cloud Computing</span>
+                          <i class="fa fa-link"></i>
+                          <h4 class="name">Direct URL</h4>
+                          <span class="category">Direct URL</span>
                         </figure>
-                        <!-- /Portfolio Item Detailed Page-->
+                        -->
+                      <!-- /Portfolio Item URL -->
+
+
                       </div>
                       <!-- /Portfolio Content -->
                     </div>

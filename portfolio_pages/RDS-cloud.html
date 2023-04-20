@@ -10,11 +10,11 @@
     <meta name="author" content="lmpixels" />
     <link rel="shortcut icon" href="icon.jpeg">
 
-    <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
 
     <script src="js/modernizr.custom.js"></script>
   </head>
@@ -45,7 +45,7 @@
                 
             <!-- Text Logo -->
             <div class="text-logo">
-              <a href="index.html">
+              <a href="../index.html">
                 <div class="logo-symbol">M</div>
                 <div class="logo-text">Michael <span>Dobbs</span></div>
               </a>
@@ -57,27 +57,27 @@
               <ul class="leven-classic-menu site-main-menu">
 
                 <li class="menu-item">
-                  <a href="index.html">About Me</a>
+                  <a href="../index.html">About Me</a>
                 </li>
 
                 <li class="menu-item">
-                  <a href="resume.html">Resume</a>
+                  <a href="../resume.html">Resume</a>
                 </li>
 
                 <li class="menu-item menu-item-has-children">
-                  <a href="portfolio-landing.html">Portfolio</a>
+                  <a href="../portfolio-landing.html">Portfolio</a>
                   <ul class="sub-menu">
                     <li class="menu-item">
-                      <a href="tableau_portfolio.html">Data Analysis & Visualization</a>
+                      <a href="../tableau_portfolio.html">Data Analysis & Visualization</a>
                     </li>
                     <li class="menu-item">
-                      <a href="database_portfolio.html">Database Administration</a>
+                      <a href="../database_portfolio.html">Database Administration</a>
                     </li>
                   </ul>
                 </li>
 
                 <li class="menu-item">
-                  <a href="contact.html">Contact</a>
+                  <a href="../contact.html">Contact</a>
                 </li>
               </ul>
             </div>
@@ -95,64 +95,92 @@
             <div id="primary" class="content-area">
 
               <div class="page-title">
-                <h1><font color="blue">Portfolio Topics</font></h1>
-                <p><b>Select a field of work to view some projects that I have done relating to it.</b></p>
-              </div>
-
-              <div id="content" class="page-content site-content single-post" role="main">
-
-                <div class="row">
-                  <div class=" col-xs-12 col-sm-12 ">
-                    <!-- Portfolio Content -->
-                    <div id="portfolio_content_q" class="portfolio-content">
-      
-                      <!-- Portfolio Grid -->
-                      <div class="portfolio-grid two-columns shuffle">
-
-                        <!-- Portfolio Item Detailed Page-->
-                        <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                          <div class="portfolio-item-img">
-                            <img src="./img/data-analysis.jpg" alt="data-analysis-and-visualization" title="data-analysis-and-visualization" />
-                            <a href="tableau_portfolio.html"></a>
-                          </div>
-
-                          <i class="far fa-file-alt"></i>
-                          <h4 class="name">Data Analysis & Visualization</h4>
-                          <span class="category">Data Analysis & Visualization</span>
-                        </figure>
-                        <!-- /Portfolio Item Detailed Page-->
-
-                        <!-- Portfolio Item Detailed Page-->
-                        <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                          <div class="portfolio-item-img">
-                            <img src="./img/database-administrator.jpg" alt="Database Administration" title="Database Administration" />
-                            <a href="database_portfolio.html"></a>
-                          </div>
-
-                          <i class="far fa-file-alt"></i>
-                          <h4 class="name">Database Administration</h4>
-                          <span class="category">Database Administration</span>
-                        </figure>
-                        <!-- /Portfolio Item Detailed Page-->
-
-                        <!-- Portfolio Item Detailed Page-->
-                        <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                          <div class="portfolio-item-img">
-                            <img src="./img/cloud-computing.PNG" alt="Cloud Computing" title="Cloud Computing" />
-                            <a href="cloud_portfolio.html"></a>
-                          </div>
-
-                          <i class="far fa-file-alt"></i>
-                          <h4 class="name">Cloud Computing</h4>
-                          <span class="category">Cloud Computing</span>
-                        </figure>
-                        <!-- /Portfolio Item Detailed Page-->
-                      </div>
-                      <!-- /Portfolio Content -->
-                    </div>
-                  </div>
+                <h1>Creating, Deploying, and Securing An AWS RDS Database.</h1>
+                <div class="home-buttons">
+                  <a href="../cloud_portfolio.html" class="btn btn-primary">Return To Portfolio</a>
                 </div>
               </div>
+
+              <!--Start of Page Content-->
+              <div id="content" class="page-content site-content single-post" role="main">
+                
+                
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>Using Amazon Web Services' Relational Database Service (RDS)</h4>
+                    <p>For this task I wanted to deploy within minutes a secure and highly
+                      available database for use in the cloud. I used MySQL for the RDBMS
+                      and used free-tier options whenever available.
+                    </p>
+                    <br>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>Initial RDS Database Creation Page</h4>
+                    <img src="../img/dbprojects/1-Creating A Database.PNG" alt="Final ERD" title="" />
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>Setting Admin Credentials and Instance ID.</h4>
+                    <img src="../img/dbprojects/2-Free Tier Database Settings.PNG" alt="Final Logical" title="" />
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>Setting Instance Class and Storage (Using Free-Tier)</h4>
+                    <img src="../img/dbprojects/3-Database Instances and Storage.PNG" alt="Context DFD" title="" />
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>Configuring Connectivity Settings and VPC.</h4>
+                    <img src="../img/dbprojects/4-Database Connectivity Settings.PNG" alt="Level-0 DFD" title="" />
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>Activating and Verifying Database Availability.</h4>
+                    <img src="../img/dbprojects/5-Active Database.PNG" alt="Level-0 DFD" title="" />
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>Configuring Database Security Groups and Access Control Lists.</h4>
+                    <img src="../img/dbprojects/6-Active Database Security Group.PNG" alt="Level-0 DFD" title="" />
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4>Monitoring Resource Usage Reports.</h4>
+                    <img src="../img/dbprojects/7-Database Monitoring.PNG" alt="Level-0 DFD" title="" />
+                  </div>
+                </div>
+               
+              
+              </div>
+             
+
             </div>
           </div>
         </div>
