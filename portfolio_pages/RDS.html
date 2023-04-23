@@ -98,7 +98,7 @@
             <div id="primary" class="content-area">
 
               <div class="page-title">
-                <h1>Creating, Deploying, and Securing An AWS RDS Database.</h1>
+                <h1><font color="#1589FF">Creating, Deploying, Securing, and Monitoring AWS RDS Databases.</font></h1>
                 <div class="home-buttons">
                   <a href="../database_portfolio.html" class="btn btn-primary">Return To Portfolio</a>
                 </div>
@@ -111,18 +111,52 @@
                 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4>Using Amazon Web Services' Relational Database Service (RDS)</h4>
-                    <p>For this task I wanted to deploy within minutes a secure and highly
-                      available database for use in the cloud. I used MySQL for the RDBMS
-                      and used free-tier options whenever available.
+                    <h4><font color="#1589FF">What is AWS's Relational Database Service (RDS)</font></h4>
+                    <p>Amazon Relational Database Service (Amazon RDS) is a collection of managed services that makes 
+                      it simple to set up, operate, and scale databases in the cloud. Choose from seven popular engines — 
+                      Amazon Aurora with MySQL compatibility, Amazon Aurora with PostgreSQL compatibility, MySQL, MariaDB, 
+                      PostgreSQL, Oracle, and SQL Server — and deploy on-premises with Amazon RDS on AWS Outposts.
                     </p>
+                    <p>With RDS people can set up, operate, and scale a relational database in the cloud with just a few clicks.
+                      And it provides the following benefits and features:
+                    </p>
+                    <li>Security and Compliance</li>
+                    <li>Performance and Scalabilty</li>
+                    <li>Automated Patching and Upgrades</li>
+                    <li>Data Durability and Redundancy</li>
+                    <li>Monitoring and Alerting</li>
+                    <li>Backup and Recovery</li>
+                    <br>
+                    <p>RDS aslo provides a feature called Multi-Availabilty Zone deployment, where it automatically creates a primary database 
+                      instance and synchronously replicates the data to an instance in a different AZ. When it detects a failure, 
+                      Amazon RDS automatically fails over to a standby instance without manual intervention. This alone makes RDS one of
+                      the most secure and highly available databases deployable in the market.</p>
                     <br>
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4>Initial RDS Database Creation Page</h4>
+                    <h4><font color="#1589FF">So How much does RDS cost?</font></h4>
+                    <p>With AWS's popular pay as you go pricing, you only pay for the amount of time and infrastructure you actually use.
+                      With that in mind, RDS charges clients based on a few different factors:
+                    </p>
+                    <li>Instance Types</li>
+                    <li>Storage</li>
+                    <li>Backup Storage</li>
+                    <li>Snapshot Exports</li>
+                    <li>Data Transfer</li>
+                    <br>
+                    <p>With instance types the most expensive option is the Multi-Availability Zone, On Demand, Memory Optimized 
+                      db.r5d.24xlarge instance, currently costing <font color="#1589FF">$38.592/hour</font> in 2023. </p>
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4><font color="#1589FF">Initial RDS Database Creation Page</font></h4>
                     <img src="../img/dbprojects/1-Creating A Database.PNG" alt="Final ERD" title="" />
                   </div>
                 </div>
@@ -131,7 +165,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4>Setting Admin Credentials and Instance ID.</h4>
+                    <h4><font color="#1589FF">Setting Admin Credentials and Instance ID</font></h4>
                     <img src="../img/dbprojects/2-Free Tier Database Settings.PNG" alt="Final Logical" title="" />
                   </div>
                 </div>
@@ -140,7 +174,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4>Setting Instance Class and Storage (Using Free-Tier)</h4>
+                    <h4><font color="#1589FF">Setting Instance Class and Storage (Using Free-Tier)</font></h4>
                     <img src="../img/dbprojects/3-Database Instances and Storage.PNG" alt="Context DFD" title="" />
                   </div>
                 </div>
@@ -149,7 +183,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4>Configuring Connectivity Settings and VPC.</h4>
+                    <h4><font color="#1589FF">Configuring Connectivity Settings and VPC.</font></h4>
                     <img src="../img/dbprojects/4-Database Connectivity Settings.PNG" alt="Level-0 DFD" title="" />
                   </div>
                 </div>
@@ -158,7 +192,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4>Activating and Verifying Database Availability.</h4>
+                    <h4><font color="#1589FF">Activating and Verifying Database Availability</font></h4>
                     <img src="../img/dbprojects/5-Active Database.PNG" alt="Level-0 DFD" title="" />
                   </div>
                 </div>
@@ -167,7 +201,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4>Configuring Database Security Groups and Access Control Lists.</h4>
+                    <h4><font color="#1589FF">Configuring Database Security Groups and Access Control Lists</font></h4>
                     <img src="../img/dbprojects/6-Active Database Security Group.PNG" alt="Level-0 DFD" title="" />
                   </div>
                 </div>
@@ -176,7 +210,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4>Monitoring Resource Usage Reports.</h4>
+                    <h4><font color="#1589FF">Monitoring Resource Usage Reports</font></h4>
                     <img src="../img/dbprojects/7-Database Monitoring.PNG" alt="Level-0 DFD" title="" />
                   </div>
                 </div>
