@@ -111,7 +111,7 @@
                 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4><font color="#1589FF">What is AWS's Relational Database Service (RDS)</font></h4>
+                    <h4><font color="#1589FF">What is AWS's Relational Database Service (RDS)</font></h4><br>
                     <p>Amazon Relational Database Service (Amazon RDS) is a collection of managed services that makes 
                       it simple to set up, operate, and scale databases in the cloud. Choose from seven popular engines — 
                       Amazon Aurora with MySQL compatibility, Amazon Aurora with PostgreSQL compatibility, MySQL, MariaDB, 
@@ -127,7 +127,7 @@
                     <li>Monitoring and Alerting</li>
                     <li>Backup and Recovery</li>
                     <br>
-                    <p>RDS aslo provides a feature called Multi-Availabilty Zone deployment, where it automatically creates a primary database 
+                    <p>RDS also provides a feature called Multi-Availabilty Zone deployment, where it automatically creates a primary database 
                       instance and synchronously replicates the data to an instance in a different AZ. When it detects a failure, 
                       Amazon RDS automatically fails over to a standby instance without manual intervention. This alone makes RDS one of
                       the most secure and highly available databases deployable in the market.</p>
@@ -137,7 +137,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4><font color="#1589FF">So How much does RDS cost?</font></h4>
+                    <h4><font color="#1589FF">So how much does RDS cost?</font></h4><br>
                     <p>With AWS's popular pay as you go pricing, you only pay for the amount of time and infrastructure you actually use.
                       With that in mind, RDS charges clients based on a few different factors:
                     </p>
@@ -147,8 +147,14 @@
                     <li>Snapshot Exports</li>
                     <li>Data Transfer</li>
                     <br>
-                    <p>With instance types the most expensive option is the Multi-Availability Zone, On Demand, Memory Optimized 
-                      db.r5d.24xlarge instance, currently costing <font color="#1589FF">$38.592/hour</font> in 2023. </p>
+                    
+                    <p>Depending on what your systems hardware needs are, you may need to upgrade each of these features independently to best fit your needs,
+                      which RDS is designed to help you de seemlessly as well. AWS provides detailed pricing for RDS services based on database engine 
+                      selected at the following link:</p>
+                      <div class="home-buttons">
+                        <a href="https://aws.amazon.com/rds/pricing/#Pricing_by_RDS_engine" class="btn btn-primary">AWS RDS Pricing</a>
+                      </div><br>
+                    <p>That covers about all of the important background information regarding AWS RDS. So lets go ahead and see how simple it is to create a database with it!</p>
                   </div>
                 </div>
                 <br>
@@ -156,7 +162,14 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4><font color="#1589FF">Initial RDS Database Creation Page</font></h4>
+                    <h4><font color="#1589FF">Initial RDS Database Creation Page</font></h4><br>
+                    <p>Upon arriving at AWS RDS within the management console, you can simply click the create database button to be greated by the 
+                      following screen. Here you can select a database creating method and engine options. Easy creation allows for simple setup for
+                      people who need a database deployed with best practice configuration (in case they know little about configuration options or
+                      need something simple in a short amount of time). Standard create allows you to set all the configuration options manually. Selecting
+                      an engine is pretty straightforward, except that AWS Aurora is listed among other standard engines. Aurora is an extremely high availability
+                      engine using PostgreSQL or MySQL only, but we will not be covering any of its other features and perks in this demonstration. For now I 
+                      am simply going to use MySQL for my engine with the latest version for me.</p><br>
                     <img src="../img/dbprojects/1-Creating A Database.PNG" alt="Final ERD" title="" />
                   </div>
                 </div>
@@ -165,7 +178,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4><font color="#1589FF">Setting Admin Credentials and Instance ID</font></h4>
+                    <h4><font color="#1589FF">Setting Admin Credentials and Instance ID</font></h4><br>
                     <img src="../img/dbprojects/2-Free Tier Database Settings.PNG" alt="Final Logical" title="" />
                   </div>
                 </div>
@@ -174,7 +187,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4><font color="#1589FF">Setting Instance Class and Storage (Using Free-Tier)</font></h4>
+                    <h4><font color="#1589FF">Setting Instance Class and Storage (Using Free-Tier)</font></h4><br>
                     <img src="../img/dbprojects/3-Database Instances and Storage.PNG" alt="Context DFD" title="" />
                   </div>
                 </div>
@@ -183,7 +196,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4><font color="#1589FF">Configuring Connectivity Settings and VPC.</font></h4>
+                    <h4><font color="#1589FF">Configuring Connectivity Settings and VPC.</font></h4><br>
                     <img src="../img/dbprojects/4-Database Connectivity Settings.PNG" alt="Level-0 DFD" title="" />
                   </div>
                 </div>
@@ -192,7 +205,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4><font color="#1589FF">Activating and Verifying Database Availability</font></h4>
+                    <h4><font color="#1589FF">Activating and Verifying Database Availability</font></h4><br>
                     <img src="../img/dbprojects/5-Active Database.PNG" alt="Level-0 DFD" title="" />
                   </div>
                 </div>
@@ -201,7 +214,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4><font color="#1589FF">Configuring Database Security Groups and Access Control Lists</font></h4>
+                    <h4><font color="#1589FF">Configuring Database Security Groups and Access Control Lists</font></h4><br>
                     <img src="../img/dbprojects/6-Active Database Security Group.PNG" alt="Level-0 DFD" title="" />
                   </div>
                 </div>
@@ -210,7 +223,7 @@
 
                 <div class="row">
                   <div class="col-md-12 col-md-12">
-                    <h4><font color="#1589FF">Monitoring Resource Usage Reports</font></h4>
+                    <h4><font color="#1589FF">Monitoring Resource Usage Reports</font></h4><br>
                     <img src="../img/dbprojects/7-Database Monitoring.PNG" alt="Level-0 DFD" title="" />
                   </div>
                 </div>
