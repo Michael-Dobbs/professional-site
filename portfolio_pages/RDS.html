@@ -179,6 +179,12 @@
                 <div class="row">
                   <div class="col-md-12 col-md-12">
                     <h4><font color="#1589FF">Setting Admin Credentials and Instance ID</font></h4><br>
+                    <p>The most important settings for security are the admin credentials for the database. While the instance ID is simply a name 
+                      used to identify the database in AWS, the admin credentials are how you sign in and manage everything related to the database.
+                      Here you create a master or root username, and then you either auto generate or create your own password. Since mishandling
+                      data can come with hefty lawsuits and loss of business, securing the root user credentials is one of 
+                      the simplest ways to protect the database well.
+                    </p><br>
                     <img src="../img/dbprojects/2-Free Tier Database Settings.PNG" alt="Final Logical" title="" />
                   </div>
                 </div>
@@ -188,6 +194,12 @@
                 <div class="row">
                   <div class="col-md-12 col-md-12">
                     <h4><font color="#1589FF">Setting Instance Class and Storage (Using Free-Tier)</font></h4><br>
+                    <p>This is where we decide how large the database is going o be in terms of resources, as well as how much money
+                      needs to be spent on the system. The database instance class refers to how many virtual CPU's, RAM, and other processing
+                      hardware is dedicated for our system. The storage type refers to the performance capabilities of the SSD or HDD that we choose 
+                      to hold our data. We also select the amount of allocated storage, whether it will autoscale in response to the database reaching 
+                      its storage limits, and if so what the maximum threshold for scaling is.
+                    </p><br>
                     <img src="../img/dbprojects/3-Database Instances and Storage.PNG" alt="Context DFD" title="" />
                   </div>
                 </div>
@@ -197,6 +209,13 @@
                 <div class="row">
                   <div class="col-md-12 col-md-12">
                     <h4><font color="#1589FF">Configuring Connectivity Settings and VPC.</font></h4><br>
+                    <p>Next we set some connectivity configurations for how the database will be accessed in various ways. We are prompted
+                      to select a virtual private cloud (VPC) for its private networking environment, then a subnet group within that VPC, and
+                      then select whether or not it has public access from services like EC2 and other devices outside the VPC (saying no simply
+                      does not assign a public IP address to the database). After that we need to either create a new security group that defines 
+                      access controls to the database (IP filtering for access, I will demonstrate this briefly) or choose an existing one if available. Once we have made sure that
+                      access is as secure as possible we can go ahead and launch the database!
+                    </p><br>
                     <img src="../img/dbprojects/4-Database Connectivity Settings.PNG" alt="Level-0 DFD" title="" />
                   </div>
                 </div>
@@ -206,6 +225,13 @@
                 <div class="row">
                   <div class="col-md-12 col-md-12">
                     <h4><font color="#1589FF">Activating and Verifying Database Availability</font></h4><br>
+                    <p>Now that we have the database up and running, we can view it by selecting it in the RDS databases tab. The summary
+                      tab tells us some simple identifying information about the database and a little about its current usage. One of the most important
+                      things that it displays for us is whether the database is currently deployed and in an available state to be accessed and used.
+                      There are also a few other tabs that can provide detailed information for the database for security and configuration under the summary section.
+                      In the next section we will scroll a little further down the connectivity and security section we have selected to view our current access
+                      controls for the database.
+                    </p><br>
                     <img src="../img/dbprojects/5-Active Database.PNG" alt="Level-0 DFD" title="" />
                   </div>
                 </div>
@@ -215,6 +241,12 @@
                 <div class="row">
                   <div class="col-md-12 col-md-12">
                     <h4><font color="#1589FF">Configuring Database Security Groups and Access Control Lists</font></h4><br>
+                    <p>Here we can see that there are currently 2 active rules for the access list to our database. One is an inbound rule allowing
+                      traffic from an IP address 173.18.47.15/32 (likely my own workstation at the time of making this). The other is an outbound rule
+                      that currently allows traffic to any possible IP address (0.0.0.0/0). That is not good security for the record! I set it up this way to
+                      simplify the creation process for this example, but all inbound and outbound traffic should of course only be routed to trused IP addresses (never
+                      open like this to anyone!). There are also sections where you can configure replication and proxying settings for the database too if you so desire.
+                    </p><br>
                     <img src="../img/dbprojects/6-Active Database Security Group.PNG" alt="Level-0 DFD" title="" />
                   </div>
                 </div>
@@ -224,11 +256,35 @@
                 <div class="row">
                   <div class="col-md-12 col-md-12">
                     <h4><font color="#1589FF">Monitoring Resource Usage Reports</font></h4><br>
+                    <p>Next to the connectivity and security tab is another key tab for monitoring resource usage for the database. Here we can see
+                      some of the important vital information about how our database is performing. If we notice any spikes in hardware usage we can investigate
+                      what might be cause them and react accordingly. This is also where we can set up CloudWatch alerts for certain events and changes to the database.
+                    </p><br>
                     <img src="../img/dbprojects/7-Database Monitoring.PNG" alt="Level-0 DFD" title="" />
                   </div>
                 </div>
+                <br>
+                <br>
                
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4><font color="#1589FF">Wrapping up the demonstration</font></h4><br>
+                    <p>There are many perks to using AWS RDS to deploy and manage databases in the cloud. While we were not able to showcase all of the features
+                      and configurations that RDS has to allow people to fully customize their environment, I'm sure that you now at least have seen how simple and
+                      convenient RDS makes database deployment. I encourage people interested in deploying databases to try out the free tier settings for their database
+                      needs and see how easy it is to setup, manage, and utilize this fantastic service.
+                    </p><br>
+                  </div>
+                </div>
               
+                <div class="row">
+                  <div class="col-md-12 col-md-12">
+                    <h4><font color="#1589FF">Thanks for reading!</font></h4>
+                    <div class="home-buttons">
+                      <a href="../database_portfolio.html" class="btn btn-primary">Return To Portfolio</a>
+                    </div>
+                  </div>
+                </div>
               </div>
              
 
